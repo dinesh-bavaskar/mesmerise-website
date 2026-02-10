@@ -190,3 +190,17 @@
 .logo-rise {
   color: #2aa7df;   /* blue */
 }
+/* ===============================
+   FOOTER RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+}

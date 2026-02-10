@@ -123,3 +123,62 @@
     font-size: 2.2rem;
   }
 }
+/* ===============================
+   ABOUT RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
+  }
+}
+/* ===============================
+   ABOUT MOBILE FIX
+================================ */
+.about {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px; /* 🔥 mobile padding fix */
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,32 @@
+/* ===== ABSOLUTE GLOBAL FIX ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -72,4 +101,17 @@ html {
 
 section {
   scroll-margin-top: 90px; /* sticky navbar height */
+}
+/* 🔥 FIX ROOT FLEX ISSUE */
+body {
+  display: block !important;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden !important;
 }

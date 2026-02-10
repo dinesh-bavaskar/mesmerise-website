@@ -29,3 +29,15 @@
   transform: translateY(-10px);
   box-shadow: 0 25px 60px rgba(11, 94, 215, 0.25);
 }
+/* ===============================
+   SERVICES RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services h2 {
+    font-size: 2rem;
+  }
+}
