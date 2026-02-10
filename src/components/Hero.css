@@ -1,0 +1,115 @@
+/* ===============================
+   HERO CONTAINER
+================================ */
+.hero {
+  position: relative;
+  width: 100vw;
+ min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+/* ===============================
+   IMAGE SLIDER
+================================ */
+.hero-slider {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* 🔥 KEY FIX */
+  transform: translateX(100%);
+}
+
+/* ===============================
+   OVERLAY (LEFT DARK → RIGHT LIGHT)
+================================ */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(6, 22, 48, 0.95) 0%,
+    rgba(6, 22, 48, 0.85) 40%,
+    rgba(6, 22, 48, 0.55) 70%,
+    rgba(6, 22, 48, 0.25) 100%
+  );
+  z-index: 1;
+}
+
+/* ===============================
+   CONTENT (ALWAYS VISIBLE)
+================================ */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: #e6efff;
+}
+
+/* ===============================
+   CTA BUTTON
+================================ */
+.hero-btn {
+  padding: 14px 36px;
+  border-radius: 6px;
+  border: none;
+  background: #1e88e5;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 136, 229, 0.45);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 6%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+.hero-slide {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

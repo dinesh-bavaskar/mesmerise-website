@@ -1,0 +1,192 @@
+/* ======================================================
+   COLOR VARIABLES
+====================================================== */
+:root {
+  --dark-blue: #1f2a55;
+  --dark-blue-2: #27346a;
+  --accent-blue: #0b5ed7;
+  --light-text: #c7d2fe;
+  --white: #ffffff;
+}
+
+/* ======================================================
+   CTA SECTION
+====================================================== */
+.cta-section {
+  background: linear-gradient(135deg, var(--dark-blue), var(--dark-blue-2));
+  padding: 90px 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {
+  max-width: 1100px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 22px;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+}
+
+.cta-text h2 {
+  font-size: 2rem;
+  color: var(--accent-blue);
+  margin-bottom: 16px;
+}
+
+.cta-text p {
+  max-width: 620px;
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  background: var(--accent-blue);
+  color: #fff;
+  padding: 15px 38px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cta-btn:hover {
+  background: #094bb3;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(11, 94, 215, 0.35);
+}
+
+/* CTA RESPONSIVE */
+@media (max-width: 768px) {
+  .cta-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 32px;
+  }
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+.footer {
+  background: var(--dark-blue);
+  padding: 80px 8% 40px;
+  color: var(--light-text);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 45px;
+}
+
+/* LOGO */
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #38bdf8;
+  margin-bottom: 18px;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--light-text);
+}
+
+/* FOOTER HEADINGS */
+.footer h4 {
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+/* FOOTER LINKS */
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: var(--light-text);
+  transition: color 0.3s ease;
+}
+
+.footer ul li:hover {
+  color: #38bdf8;
+}
+
+/* CONTACT */
+.footer-contact p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: var(--light-text);
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.footer-social span {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-social span:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(11, 94, 215, 0.4);
+}
+
+/* ======================================================
+   FOOTER BOTTOM
+====================================================== */
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+
+.footer-bottom span {
+  color: #38bdf8;
+  font-weight: 500;
+}
+/* ================= LOGO COLOR (SAME AS IMAGE) ================= */
+
+.logo-mes {
+  color: #3fa596;   /* teal */
+}
+
+.logo-me {
+  color: #46c6e6;   /* light sky blue */
+}
+
+.logo-rise {
+  color: #2aa7df;   /* blue */
+}

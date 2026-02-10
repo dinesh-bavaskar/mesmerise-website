@@ -1,0 +1,258 @@
+/* ===============================
+   EXCELLENCE SECTION
+================================ */
+.excellence {
+  padding: 110px 8%;
+  background: #f6f9ff;
+  text-align: center;
+  overflow-x: hidden; /* SAFETY */
+}
+
+/* ---------- TITLE ---------- */
+.excellence-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #0b5ed7;
+  margin-bottom: 20px;
+}
+
+.excellence-desc {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ---------- GRID ---------- */
+.excellence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 FORCE 3 COLUMNS */
+  gap: 40px;
+  margin-bottom: 90px;
+  justify-items: center;
+}
+
+
+/* ===============================
+   CARD (PREMIUM)
+================================ */
+.excellence-card {
+  position: relative;
+  background: linear-gradient(180deg, #0f355a, #0b2c4a);
+  padding: 38px 32px;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 25px 60px rgba(2, 20, 45, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.excellence-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ff3c3c,
+    #ffb703,
+    #38bdf8,
+    #6366f1,
+    #a855f7
+  );
+}
+
+.excellence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 90px rgba(15, 90, 200, 0.45);
+}
+
+.excellence-card h3 {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.excellence-card p {
+  font-size: 0.95rem;
+  color: #8fd3ff;
+  line-height: 1.7;
+}
+
+/* ===============================
+   CERTIFICATION
+================================ */
+.certification {
+  margin-bottom: 80px;
+}
+
+.certification h4 {
+  font-size: 1.3rem;
+  color: #0b5ed7;
+  margin-bottom: 18px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 16px 34px;
+  border-radius: 16px;
+  background: #ffffff;
+  font-weight: 700;
+  color: #0b5ed7;
+  position: relative;
+  box-shadow: 0 18px 45px rgba(11, 94, 215, 0.2);
+}
+
+.badge::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  background: linear-gradient(
+    90deg,
+    #ff3c3c,
+    #ffb703,
+    #38bdf8,
+    #6366f1,
+    #a855f7
+  );
+  z-index: -1;
+}
+
+/* ===============================
+   CLIENTS
+================================ */
+.clients h3 {
+  font-size: 1.9rem;
+  color: #0b5ed7;
+  margin-bottom: 12px;
+}
+
+.clients p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #475569;
+}
+
+/* ===============================
+   LOGO SLIDER
+================================ */
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: max-content;
+  animation: logoScroll 26s linear infinite;
+  will-change: transform;
+}
+
+.logo-slide {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide img {
+  max-width: 140px;
+  max-height: 80px;
+  object-fit: contain;
+
+  /* 🔥 ORIGINAL LOGO COLOR */
+  filter: none;
+  opacity: 1;
+
+  transition: all 0.3s ease;
+}
+
+.logo-slide img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* RIGHT ➜ LEFT ANIMATION */
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+ .excellence {
+  padding: 110px 0;
+  background: #f6f9ff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+
+  .excellence-title {
+    font-size: 2.2rem;
+  }
+
+  .logo-track {
+    gap: 40px;
+  }
+
+  .logo-slide img {
+    max-width: 110px;
+    max-height: 60px;
+  }
+}
+/* ===============================
+   CONTAINER ALIGNMENT FIX
+================================ */
+.excellence-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.excellence {
+  padding: 110px 0;
+  background: #f6f9ff;
+  overflow-x: hidden;
+}
+
+.excellence-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media (max-width: 1024px) {
+  .excellence-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .excellence-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===============================
+   IGNITION INTEGRATOR LOGO
+================================ */
+.integrator-logo {
+  max-width: 180px;
+  margin: 20px auto;
+  display: block;
+  object-fit: contain;
+}
