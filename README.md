@@ -1,16 +1,46 @@
-# React + Vite
+# ✨ Mesmerise – Modern Business Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Demo:** https://mesmerise-website.vercel.app/  
+📂 **GitHub Repository:** https://github.com/dinesh-bavaskar/mesmerise-website
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Project Overview
 
-## React Compiler
+Mesmerise is a modern and responsive **business website** designed with a clean layout and visually appealing user interface.  
+The project focuses on delivering a professional web presence using modern frontend development tools and best practices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Built for performance and responsiveness, the application demonstrates practical experience in **component-based UI design and fast development workflows**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+---
+
+## ✨ Key Features
+
+- 🎨 Clean and modern UI design
+- 📱 Fully responsive across devices
+- ⚡ Fast performance with Vite
+- 🧩 Component-based structure
+- 🌍 Business-oriented layout
+
+---
+
+## 🎯 Purpose of the Project
+
+- Build a production-style business website
+- Practice React + Vite workflow
+- Develop responsive UI layouts
+- Improve modern frontend development skills
+
+---
+
+⭐ If you find this project useful, consider starring the repository!
